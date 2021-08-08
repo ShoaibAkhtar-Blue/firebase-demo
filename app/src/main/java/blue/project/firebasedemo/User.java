@@ -1,17 +1,19 @@
 package blue.project.firebasedemo;
 
 public class User {
-    private String firstNamr;
+    private String firstName;
     private String lastName;
     private String fullName;
 
-    public User(String firstNamr, String lastName) {
-        this.firstNamr = firstNamr;
+    public User() { }
+
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public String getFirstNamr() {
-        return firstNamr;
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getLastName() {
@@ -19,6 +21,6 @@ public class User {
     }
 
     public String getFullName() {
-        return firstNamr + " " + lastName;
+        return firstName + " " + lastName;
     }
 }
