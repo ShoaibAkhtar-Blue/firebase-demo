@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Firebase Demo</string>
+    <string name="hint_firstName">First Name</string>
+    <string name="hint_lastName">Last Name</string>
+    <string name="button_save">Save Data</string>
+    <string name="button_getData">Get Data</string>
+</resources>
