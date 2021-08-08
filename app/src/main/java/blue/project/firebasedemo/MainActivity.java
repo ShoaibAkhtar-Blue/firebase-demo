@@ -3,7 +3,9 @@ package blue.project.firebasedemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         saveBtn = findViewById(R.id.button_save);
         getDataBtn = findViewById(R.id.button_getData);
 
+        // Set onClickListener on save button
         saveBtn.setOnClickListener(view -> {
             String firstName = firstNameEditText.getText().toString();
             String lastName = lastNameEditText.getText().toString();
@@ -54,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             } else {
                 Toast.makeText(this, "Enter first name", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Set onClickListener on get data button
+        getDataBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ShowDataActivity.class);
+                startActivity(intent);
             }
         });
     }

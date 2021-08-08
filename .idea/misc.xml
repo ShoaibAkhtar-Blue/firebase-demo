@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Android/FirebaseDemo/app/src/main/res/layout-land/activity_main.xml" value="0.2857142857142857" />
         <entry key="..\:/Android/FirebaseDemo/app/src/main/res/layout/activity_main.xml" value="0.2848731884057971" />
+        <entry key="..\:/Android/FirebaseDemo/app/src/main/res/layout/activity_show_data.xml" value="0.2848731884057971" />
+        <entry key="..\:/Android/FirebaseDemo/app/src/main/res/layout/list_item.xml" value="0.25" />
       </map>
     </option>
   </component>
